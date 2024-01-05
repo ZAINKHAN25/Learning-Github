@@ -32,41 +32,43 @@ Make sure you have the following installed:
    - Run the following commands:
      ```bash
      git init
+     ```
+
+     This command initializes a hidden file in your project, responsible for Git-related operations.
+
+     ```bash
      git status
-     git add .
      ```
 
-4. **Create a New Branch:**
-   - Create a new branch for your changes:
-     ```bash
-     git branch feature-branch
-     git checkout feature-branch
-     ```
+     If the result is shown in red, use `git add .` to stage the changes. If it's green, proceed to the next step. If the result is "nothing to commit, working tree clean," your code is up to date, and you don't need to push.
 
-5. **Commit Changes:**
-   - Add the files to the staging area:
      ```bash
      git add .
      ```
-   - Commit the changes:
+
+     Now, commit your changes:
+
      ```bash
-     git commit -m "Initial commit"
+     git commit -m "Your commit name"
      ```
 
-6. **Configure Git Credentials (Windows Only):**
-   - If you encounter credential issues on Windows, configure your Git credentials using:
+     Select a branch:
+
      ```bash
-     git config --global credential.helper manager
+     git branch -M main
      ```
 
-7. **Push to GitHub:**
-   - Push your code to GitHub:
+     Add the remote origin to your project:
+
      ```bash
-     git push origin feature-branch
+     git remote add origin https://github.com/YourAccountName/YourRepositoryName.git
      ```
 
-8. **Remove Git Credentials (Windows Only):**
-   - If you need to update or remove credentials on Windows, you can do so in the Credential Manager.
+     Finally, push your code:
+
+     ```bash
+     git push -u origin main
+     ```
 
 That's it! Your code is now on GitHub.
 
