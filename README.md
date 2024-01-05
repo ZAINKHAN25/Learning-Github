@@ -1,4 +1,4 @@
-# Learning-GitHub
+# Learning-GitHub-For-Beginner's
 
 Hello everyone! If you're new to GitHub and want to learn how to push your code for the first time, you're in the **right** readme file. In this guide, you will learn the basics of pushing your code to GitHub. I've included images for each step to make it easier for you. (Thanks!)
 
@@ -69,6 +69,33 @@ Make sure you have the following installed:
      ```bash
      git push -u origin main
      ```
+
+4. **Push Changes to GitHub:**
+   - After making changes to your code:
+     ```bash
+     git status
+     ```
+     If the result shows modified files in red, proceed to the next steps.
+
+     ```bash
+     git add .
+     ```
+
+     Commit the changes:
+
+     ```bash
+     git commit -m "Description of your changes"
+     ```
+
+     Replace "Description of your changes" with a brief and meaningful message describing the changes you made.
+
+     Push the changes to GitHub:
+
+     ```bash
+     git push
+     ```
+
+     If you are on the `main` branch, you can use `git push origin main`. If you are on a different branch, replace `main` with the name of your branch.
 
 That's it! Your code is now on GitHub.
 
