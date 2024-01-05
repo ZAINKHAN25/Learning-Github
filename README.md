@@ -23,22 +23,27 @@ Make sure you have the following installed:
    - Fill in the repository name and description.
    - Click on "Create repository."
 
-3. **Clone the Repository:**
-   - Click on the "Code" button in your new repository.
-   - Copy the repository URL.
-   - Open your terminal and run:
+3. **Initialize a Git Repository:**
+   - Open your terminal.
+   - Navigate to your project folder:
      ```bash
-     git clone <repository-url>
+     cd /path/to/your/project
+     ```
+   - Run the following commands:
+     ```bash
+     git init
+     git status
+     git add .
      ```
 
-4. **Add your Code:**
-   - Move your project files into the cloned repository folder.
+4. **Create a New Branch:**
+   - Create a new branch for your changes:
+     ```bash
+     git branch feature-branch
+     git checkout feature-branch
+     ```
 
 5. **Commit Changes:**
-   - In your terminal, navigate to the repository:
-     ```bash
-     cd <repository-folder>
-     ```
    - Add the files to the staging area:
      ```bash
      git add .
@@ -48,11 +53,20 @@ Make sure you have the following installed:
      git commit -m "Initial commit"
      ```
 
-6. **Push to GitHub:**
+6. **Configure Git Credentials (Windows Only):**
+   - If you encounter credential issues on Windows, configure your Git credentials using:
+     ```bash
+     git config --global credential.helper manager
+     ```
+
+7. **Push to GitHub:**
    - Push your code to GitHub:
      ```bash
-     git push origin main
+     git push origin feature-branch
      ```
+
+8. **Remove Git Credentials (Windows Only):**
+   - If you need to update or remove credentials on Windows, you can do so in the Credential Manager.
 
 That's it! Your code is now on GitHub.
 
